@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Граф отзывов на D3.js</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+            body {
+            display: flex;
+            justify-content: center; /* Центрируем SVG по горизонтали */
+            align-items: center;     /* Центрируем SVG по вертикали */
+            height: 100vh;           /* Высота страницы - 100% от высоты окна */
+            margin: 0;               /* Убираем стандартные отступы */
+        }
+
+        #graph-container {
+            width: 100%;              /* Ширина контейнера - 80% от ширины окна */
+            height: 100%;            /* Высота контейнера - 80% от высоты окна */
+            border: 1px solid #ccc;
+        }
+
+        .node {
+            stroke: #fff;
+            stroke-width: 2.5px;
+        }
+
+        .link {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: auto;
+            padding: 8px;
+            font: 8px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+    </style>
+    <script src="script.js"></script> <!-- Подключение внешнего скрипта -->
+</head>
+<body>
+    <div id="graph-container"></div>
+</body>
+</html>
